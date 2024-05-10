@@ -1,0 +1,236 @@
+*{margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+nav{
+    background-color: aqua;
+}
+.nav-container {
+    max-width: 1400px;
+   
+    margin: 0 auto;
+}
+.nav-container h1{
+    font-size: 40px;
+
+}
+.urban-logo .logo-img{
+    width: 70px;
+    object-fit: cover;
+
+ 
+}
+.urban-logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+.menu{
+    width: 50%;
+display: flex;
+justify-content: space-between;
+ 
+}
+
+
+
+
+.nav-container{
+    display: flex;
+    align-items: center;
+ 
+}
+/* banner  */
+.man-bag-container{
+    border: 2px solid wheat;
+    display: flex;
+    margin: 50px auto 0;
+    max-width: 1440px;
+    min-height: 50px;
+ 
+}
+.bag-written-part{
+    border: 1px solid red;
+    width: 50%;
+}
+.banner-img{
+    border: 1px solid gold;
+    width: 50%;
+
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+    
+}
+.bag-written-part h1{
+    background-image: linear-gradient(to bottom, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+}
+.bag-written-part h3{
+    font-size: 40px;
+}
+
+.btn button{
+    background-color: bisque;
+    padding:  10px 20px;
+    
+}
+.btn{
+    
+    margin-top: 20px;
+}
+.bag-written-part{
+    text-align: center;
+    padding-top: 20px;
+   
+  
+}
+  
+.bag-logo-container{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+/* products  */
+.grid-container{
+    border: 1px solid darkgreen;
+    display: grid;
+    max-width: 1440px;
+    margin: 50px auto;
+    min-height: 400px;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.title{
+    text-align: center;
+    margin-top: 100px;
+}
+.single-products{
+    border: 1px solid blue;
+    
+    background-color: bisque;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    padding: 10px;
+   
+
+}
+
+.single-products img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+   
+}
+
+.product-icon-name-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-img{
+    display: flex;
+}
+
+
+
+/* discount part */
+
+.discount-section{
+    background-color: red;
+    min-height: 500px;
+    
+}
+.discount-container{
+    max-width: 1440px;
+    min-height: 200px;
+    border: 3px solid green;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.discount-img{
+    width: 50%;
+    border: 3px solid green;
+    position: relative;
+   
+
+}
+
+.discount-img img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+.discount-des{
+    width: 50%;
+
+}
+.dis-no{
+    background-color: chocolate;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 70%;
+    
+}
+
+@media screen and (max-width:576px) {
+    .nav-container,.menu{
+        flex-direction: column;
+        text-align: center;
+        
+
+    }
+    .nav-container .urban-logo{
+        margin-right: 100px;
+    }
+    .menu{
+        margin-bottom: 10px;
+    }
+    .man-bag-container{
+        flex-direction: column;
+    }
+    .bag-written-part,
+    .banner-img
+    {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+    .grid-container{
+        grid-template-columns:1fr ;
+    }
+
+    .discount-container{
+        flex-direction: column;
+    }
+    .discount-des{
+        width: 100%;
+    
+    }
+    .discount-img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:970px) {
+    .grid-container{
+        grid-template-columns:repeat(2,1fr) ;
+    }
+    .nav-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
